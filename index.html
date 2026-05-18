@@ -1,0 +1,41 @@
+<html>
+    
+<head>
+        <title>BlackJack</title>
+        <link rel="stylesheet" href = "index.css">
+    </head>
+
+    <body>
+    
+        <h1>BlackJack</h1>
+        <!-- //paragraph is a block element and creates a new line everytime -->
+        <p id = "message-el">
+            You look lonely, I can fix that. 
+            Play a round and feel alive again!
+        </p>
+        <!--//span is an inline element and doesn't create a new line -->
+        <p id = "card">Cards:</p>
+        <p id = "sum">Sum:</p>
+
+        <button id = "start-btn" onclick = "start()" style="display: inline">START GAME</button><br>
+        <button id = "card-btn" onclick = "newCard()">NEW CARD</button><br>
+        <button id = "bet-btn" onclick="showBetInput()">PLACE BET</button>
+        
+        <input
+        id="bet-input"
+        type="number"
+        style="display:none"
+        onkeydown = "put(event)"
+        >
+        
+        <!-- <input id = "name-input" type="text" style="display: none" onkeydown = "handleInput(event)"><br>
+        <!-- <input id = "chips-input" type="number" style="display: none" onkeydown = "write(event)"> -- //too far too quick, do this modification later -->
+
+        <p class = "player"></p>
+        <p id = "chips" style="display: none"></p>
+        
+        <script src = "index.js"></script>
+    
+    </body>
+
+</html>
